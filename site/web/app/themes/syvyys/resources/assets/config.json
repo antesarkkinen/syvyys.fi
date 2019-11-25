@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/app/themes/syvyys",
-  "devUrl": "http://syvyys.test",
+  "devUrl": "http://syvyys.dev",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

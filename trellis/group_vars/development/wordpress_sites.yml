@@ -5,11 +5,11 @@
 wordpress_sites:
   syvyys.fi:
     site_hosts:
-      - canonical: syvyys.test
+      - canonical: syvyys.dev
         redirects:
-          - www.syvyys.test
+          - www.syvyys.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    admin_email: admin@syvyys.test
+    admin_email: info@syvyys.fi
     multisite:
       enabled: false
     ssl:
