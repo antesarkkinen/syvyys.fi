@@ -9,6 +9,7 @@ wordpress_sites:
         redirects:
           - www.syvyys.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_user: syvyys
     admin_email: info@syvyys.fi
     multisite:
       enabled: false
