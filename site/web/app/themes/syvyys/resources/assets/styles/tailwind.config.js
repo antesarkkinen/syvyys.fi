@@ -129,6 +129,12 @@ let colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
+
+  'syvyys-green': '#40563f',
+  'syvyys-green-light': '#93a889',
+  'syvyys-blue': '#7894a0',
+  'syvyys-blue-light': '#cedae1',
+  'syvyys-grey': '#e6e7e8',
 }
 
 module.exports = {

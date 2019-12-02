@@ -1,0 +1,15 @@
+.yogis > div:nth-child(3n+1) {
+  @apply bg-teal;
+}
+
+.yogis > div:nth-child(3n+1) .yogas-badge {
+  @apply text-teal;
+}
+
+.yogis > div:nth-child(3n+2) {
+  @apply bg-purple;
+}
+
+.yogis > div:nth-child(3n+2) .yogas-badge {
+  @apply text-purple;
+}

@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a9ffbfb5de11e990c6b85e3744c713d",
+    "content-hash": "a41ba0ff813447d519f39ba249b36f0c",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.8.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.7"
+            },
+            "require": {
+                "composer/installers": "^1.4",
+                "ffraenz/private-composer-installer": "^2.0"
+            },
+            "type": "wordpress-muplugin"
+        },
+        {
+            "name": "bea/acf-options-for-polylang",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BeAPI/acf-options-for-polylang.git",
+                "reference": "210614352491d0b52c1bd1699e21a0671b041a75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BeAPI/acf-options-for-polylang/zipball/210614352491d0b52c1bd1699e21a0671b041a75",
+                "reference": "210614352491d0b52c1bd1699e21a0671b041a75",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Be API",
+                    "email": "technique@beapi.fr",
+                    "homepage": "https://beapi.fr"
+                }
+            ],
+            "description": "Add ACF options page support for Polylang.",
+            "homepage": "https://github.com/BeAPI/acf-options-for-polylang",
+            "keywords": [
+                "acf",
+                "acf-options",
+                "options",
+                "polylang"
+            ],
+            "support": {
+                "source": "https://github.com/BeAPI/acf-options-for-polylang/tree/1.1.7",
+                "issues": "https://github.com/BeAPI/acf-options-for-polylang/issues"
+            },
+            "time": "2019-05-20T12:33:18+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.7.0",
@@ -127,6 +179,61 @@
                 "zikula"
             ],
             "time": "2019-08-12T15:00:31+00:00"
+        },
+        {
+            "name": "ffraenz/private-composer-installer",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ffraenz/private-composer-installer.git",
+                "reference": "dc54b0200952f8c03a08b5593a933c308343a2a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ffraenz/private-composer-installer/zipball/dc54b0200952f8c03a08b5593a933c308343a2a9",
+                "reference": "dc54b0200952f8c03a08b5593a933c308343a2a9",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "php": "^5.6 || ^7.0",
+                "vlucas/phpdotenv": "^3.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*",
+                "phpunit/phpunit": "5.7.* || ^6.3",
+                "zendframework/zend-coding-standard": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "FFraenz\\PrivateComposerInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "FFraenz\\PrivateComposerInstaller\\": "src/PrivateComposerInstaller"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fränz Friederes",
+                    "email": "fraenz@frieder.es",
+                    "homepage": "https://fraenz.frieder.es"
+                }
+            ],
+            "description": "A composer install helper for private packages",
+            "keywords": [
+                "composer",
+                "env",
+                "plugin",
+                "private",
+                "wordpress",
+                "wp"
+            ],
+            "time": "2019-01-30T21:44:48+00:00"
         },
         {
             "name": "jjgrainger/posttypes",
@@ -502,16 +609,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.12.0",
+            "version": "v1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
-                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
+                "reference": "f8f0b461be3385e56d6de3dbb5a0df24c0c275e3",
                 "shasum": ""
             },
             "require": {
@@ -523,7 +630,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12-dev"
+                    "dev-master": "1.13-dev"
                 }
             },
             "autoload": {
@@ -556,7 +663,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "time": "2019-11-27T13:56:44+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -641,12 +748,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "40fb2c205dd261ab6bb42ec29545934f0db7026f"
+                "reference": "9986511fcd47e8b8ec491884cc18beee1773548a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/40fb2c205dd261ab6bb42ec29545934f0db7026f",
-                "reference": "40fb2c205dd261ab6bb42ec29545934f0db7026f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/9986511fcd47e8b8ec491884cc18beee1773548a",
+                "reference": "9986511fcd47e8b8ec491884cc18beee1773548a",
                 "shasum": ""
             },
             "conflict": {
@@ -749,7 +856,7 @@
                 "silverstripe/userforms": "<3",
                 "simple-updates/phpwhois": "<=1",
                 "simplesamlphp/saml2": "<1.10.6|>=2,<2.3.8|>=3,<3.1.4",
-                "simplesamlphp/simplesamlphp": "<1.17.3",
+                "simplesamlphp/simplesamlphp": "<1.17.8",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "slim/slim": "<2.6",
                 "smarty/smarty": "<3.1.33",
@@ -851,7 +958,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-11-19T14:18:57+00:00"
+            "time": "2019-11-29T17:22:08+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
