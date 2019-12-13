@@ -6,6 +6,26 @@ use Sober\Controller\Controller;
 
 class App extends Controller
 {
+    public function cta_top()
+    {
+    $cta_top = get_posts([
+      'post_type'       => 'cta',
+      'post_status'     => 'publish',
+      'meta_key'        => 'cta_position',
+      'meta_value'      => 'top',
+      'posts_per_page'  => '1',
+      'orderby'         => 'menu_order',
+      'order'           => 'ASC'
+    ]);
+    return array_map(function ($post) {
+      return [
+        'content' => get_field('cta_content', $post),
+        'button_text' => get_field('cta_button_text', $post),
+        'button_link' => get_field('cta_button_link', $post)
+      ];
+    }, $cta_top);
+    }
+
     public function siteName()
     {
         return get_bloginfo('name');

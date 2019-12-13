@@ -4,18 +4,15 @@
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     @include('partials.header')
-    <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
-          @yield('content')
-        </main>
-        @if (App\display_sidebar())
-          <aside class="sidebar">
-            @include('partials.sidebar')
-          </aside>
-        @endif
-      </div>
-    </div>
+    <main id="content" class="group" role="main">
+      @include('blocks.hero')
+      @yield('content')
+      @if (App\display_sidebar())
+        <aside class="sidebar">
+          @include('partials.sidebar')
+        </aside>
+      @endif
+    </main>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
